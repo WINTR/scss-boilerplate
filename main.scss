@@ -1,0 +1,69 @@
+/* /////////////////////////////////////////////////////
+
+PROJECT TITLE
+matt@wintr.us @ WINTR
+
+///////////////////////////////////////////////////// */
+
+
+/* Compass Imports
+--------------------------------------------- */
+
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+
+
+
+/* Variables
+--------------------------------------------- */
+
+$base-color: #824231;
+$highlight-color: #ea2427;
+
+$body-font: Helvetica, Arial, sans-serif;
+
+
+
+/* Sprites
+--------------------------------------------- */
+
+$misc-sprite-dimensions : true;
+$misc-spacing : 2px;
+@import "misc/*.png";
+
+
+
+/* Imports
+--------------------------------------------- */
+
+@import "base";
+@import "utils";
+@import "modules";
+
+
+
+/* /////////////////////////////////////////////////////
+
+GLOBAL LAYOUT
+
+///////////////////////////////////////////////////// */
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+
+/* /////////////////////////////////////////////////////
+
+PAGE LAYOUTS
+
+///////////////////////////////////////////////////// */
+
+
+/* Home page
+--------------------------------------------- */
+
+body.home {}
