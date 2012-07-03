@@ -5,6 +5,13 @@ Only single elements. No classes or ids.
 
 ///////////////////////////////////////////////////// */
 
+* { 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  // *behavior: url(/scripts/boxsizing.htc); // <--- Use this for <= IE7 https://github.com/Schepp/box-sizing-polyfill
+}
+
 html {
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased;
