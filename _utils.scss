@@ -22,6 +22,48 @@ General CSS utilities and SASS mixins
 }
 
 
+/* Responsive Mixins
+   see: http://jakearchibald.github.com/sass-ie
+------------------------------------------------ */
+
+$fix-mqs: false !default;
+
+@mixin respond-min($width : $break-small) {
+  @if $fix-mqs {
+    @if $fix-mqs >= $width {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+$old-ie: false !default;
+
+@mixin old-ie {
+  @if $old-ie {
+    @content;
+  }
+}
+
+.no-mobile {
+  display: none;
+  
+  @include respond-min {
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: block;
+  
+  @include respond-min {
+    display: none;
+  }
+}
+
 
 
 
